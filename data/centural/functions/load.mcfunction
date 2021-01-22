@@ -1,5 +1,9 @@
 tellraw @a "Loading Centural Datapack"
 
+tellraw @a "Stopping Sounds"
+stopsound @a master
+stopsound @a music
+
 tellraw @a "De-Loading Scoreboard Objective Data"
 scoreboard objectives remove aviate_one_cm
 scoreboard objectives remove timer
