@@ -1,6 +1,9 @@
 
 #Decide Where They Are In
 #say tick
+
+execute at @a positioned ~ -1024 ~ as @a[dy=256,tag=in_underworld] run stopsound @s master
+execute at @a positioned ~ -1024 ~ as @a[dy=256,tag=in_underworld] run stopsound @s music
 execute at @a positioned ~ -1024 ~ as @a[dy=256,tag=in_underworld] run tag @s remove in_underworld
 execute at @a positioned ~ -1024 ~ as @a[dy=256,tag=!in_void] run tellraw @s "Welcome to the VOID"
 execute at @a positioned ~ -1024 ~ as @a[dy=256,tag=!in_void] run tag @s add in_void
