@@ -1,4 +1,11 @@
 
+#Logout Reset
+execute if entity @p[scores={logout_reset=1..}] as @a[scores={logout_reset=1..}] run tag @s remove in_underworld
+execute if entity @p[scores={logout_reset=1..}] as @a[scores={logout_reset=1..}] run tag @s remove in_void
+execute if entity @p[scores={logout_reset=1..}] as @a[scores={logout_reset=1..}] run scoreboard players reset @s logout_reset
+
+
+
 #Decide Where They Are In
 #say tick
 
