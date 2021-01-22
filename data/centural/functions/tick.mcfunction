@@ -1,4 +1,5 @@
 #Decide Where They Are In
+say tick
 execute as @a[y=-1024,dy=256,tag=in_underworld] run tag @s remove in_underworld
 execute as @a[y=-1024,dy=256,tag=!in_void] run tellraw @s "Welcome to the VOID"
 execute as @a[y=-1024,dy=256,tag=!in_void] run tag @s add in_void
