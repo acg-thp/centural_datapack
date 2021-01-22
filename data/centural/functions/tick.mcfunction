@@ -21,6 +21,9 @@ execute at @a positioned ~ -765 ~ as @a[dy=512,tag=!in_underworld] run tag @s ad
 #Determine when this music starts to play then stop it periodically.
 execute at @a positioned ~ -765 ~ as @a[dy=512,tag=in_underworld] run stopsound @s music minecraft:music.creative
 
+execute at @a positioned ~ -765 ~ as @a[dy=512,tag=in_underworld,scores={music_timer=3900}] run playsound minecraft:music_disc.pigstep master @s ~ ~ ~ 10000 .9
+execute at @a positioned ~ -765 ~ as @a[dy=512,tag=in_underworld,scores={music_timer=3900}] run scoreboard players reset @s music_timer
+
 
 #execute as @a[y=-256,dy=256,tag=!in_void] run tag @s add in_void
 
