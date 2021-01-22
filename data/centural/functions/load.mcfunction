@@ -1,5 +1,9 @@
 tellraw @a "Loading Centural Datapack"
 
+tellraw @a "Removing All Tags"
+tag @a remove in_underworld
+tag @a remove in_void
+
 tellraw @a "Stopping Sounds"
 stopsound @a master
 stopsound @a music
