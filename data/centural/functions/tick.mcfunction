@@ -5,7 +5,11 @@ execute at @a positioned ~ -1024 ~ as @a[dy=256,tag=!in_void] run tellraw @s "We
 execute at @a positioned ~ -1024 ~ as @a[dy=256,tag=!in_void] run tag @s add in_void
 
 #Why do I need to be 2/3 blocks off for this to work?
+
+execute at @a positioned ~ -765 ~ as @a[dy=512,tag=in_void] run stopsound @s master
+execute at @a positioned ~ -765 ~ as @a[dy=512,tag=in_void] run stopsound @s music
 execute at @a positioned ~ -765 ~ as @a[dy=512,tag=in_void] run tag @s remove in_void
+execute at @a positioned ~ -765 ~ as @a[dy=512,tag=in_void] run playsound minecraft:music_disc.pigstep master @s
 execute at @a positioned ~ -765 ~ as @a[dy=512,tag=!in_underworld] run tellraw @a "Welcome to the Underworld"
 execute at @a positioned ~ -765 ~ as @a[dy=512,tag=!in_underworld] run tag @s add in_underworld
 
