@@ -4,9 +4,9 @@ execute at @a as @a[y=-1024,dy=256,tag=in_underworld] run tag @s remove in_under
 execute at @a as @a[y=-1024,dy=256,tag=!in_void] run tellraw @s "Welcome to the VOID"
 execute at @a as @a[y=-1024,dy=256,tag=!in_void] run tag @s add in_void
 
-execute at @a as @a[y=-770,dy=512,tag=in_void] run tag @s remove in_void
-execute at @a as @a[y=-770,dy=512,tag=!in_underworld] run tellraw @a "Welcome to the Underworld"
-execute at @a as @a[y=-770,dy=512,tag=!in_underworld] run tag @s add in_underworld
+execute at @a as @a[y=-766,dy=512,tag=in_void] run tag @s remove in_void
+execute at @a as @a[y=-766,dy=512,tag=!in_underworld] run tellraw @a "Welcome to the Underworld"
+execute at @a as @a[y=-766,dy=512,tag=!in_underworld] run tag @s add in_underworld
 
 #execute as @a[y=-256,dy=256,tag=!in_void] run tag @s add in_void
 
