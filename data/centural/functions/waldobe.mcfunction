@@ -22,7 +22,7 @@ execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_two] as @p[tag=q
 execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_three,scores={yes=0,no=1..}] as @p[tag=quest_spacecraft_waldobe_dialouge_part_three,scores={yes=0,no=1..}] run tag @s add quest_spacecraft_waldobe_dialouge_part_four
 execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four] as @p[tag=quest_spacecraft_waldobe_dialouge_part_four] run playsound minecraft:entity.villager.no master @s ~ ~ ~ 1000000 1
 execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four] as @p[tag=quest_spacecraft_waldobe_dialouge_part_four] run tellraw @s "Id really like to get out of the Underworld sometime soon..."
-execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four] as @p[tag=quest_spacecraft_waldobe_dialouge_part_fou] run tellraw @s "Come back and give me a Yes if you change your mind."
+execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four] as @p[tag=quest_spacecraft_waldobe_dialouge_part_four] run tellraw @s "Come back and give me a Yes if you change your mind."
 execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four] as @p[tag=quest_spacecraft_waldobe_dialouge_part_four] run scoreboard players reset @s yes
 execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four] as @p[tag=quest_spacecraft_waldobe_dialouge_part_four] run scoreboard players reset @s no
 execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four] as @p[tag=quest_spacecraft_waldobe_dialouge_part_four] run scoreboard players enable @s yes
