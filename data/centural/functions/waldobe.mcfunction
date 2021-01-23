@@ -20,11 +20,11 @@ execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_two] as @p[tag=q
 execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_three,scores={yes=0,no=1..}] as @p[tag=quest_spacecraft_waldobe_dialouge_part_three,scores={yes=0,no=1..}] run tag @s add quest_spacecraft_waldobe_dialouge_part_four
 execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four,scores={yes=0,no=1..}] as @p[tag=quest_spacecraft_waldobe_dialouge_part_four,scores={yes=0,no=1..}] run tellraw @s "Id really like to get out of the Underworld sometime soon..."
 execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four,scores={yes=0,no=1..}] as @p[tag=quest_spacecraft_waldobe_dialouge_part_four,scores={yes=0,no=1..}] run tellraw @s "Come back and give me a Yes if you change your mind."
-execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four,scores={yes=0,no=1..}] as @p[tag=quest_spacecraft_waldobe_dialouge_part_four,scores={yes=0,no=1..}] run scoreboard players reset @s yes
-execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four,scores={yes=0,no=1..}] as @p[tag=quest_spacecraft_waldobe_dialouge_part_four,scores={yes=0,no=1..}] run scoreboard players reset @s no
-execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four,scores={yes=0,no=1..}] as @p[tag=quest_spacecraft_waldobe_dialouge_part_four,scores={yes=0,no=1..}] run scoreboard players enable @s yes
-execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four,scores={yes=0,no=1..}] as @p[tag=quest_spacecraft_waldobe_dialouge_part_four,scores={yes=0,no=1..}] run scoreboard players enable @s no
-execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four,scores={yes=0,no=1..}] as @p[tag=quest_spacecraft_waldobe_dialouge_part_four,scores={yes=0,no=1..}] run tag @s remove quest_spacecraft_waldobe_dialouge_part_four
+execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four] as @p[tag=quest_spacecraft_waldobe_dialouge_part_four] run scoreboard players reset @s yes
+execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four] as @p[tag=quest_spacecraft_waldobe_dialouge_part_four] run scoreboard players reset @s no
+execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four] as @p[tag=quest_spacecraft_waldobe_dialouge_part_four] run scoreboard players enable @s yes
+execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four] as @p[tag=quest_spacecraft_waldobe_dialouge_part_four] run scoreboard players enable @s no
+execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four] as @p[tag=quest_spacecraft_waldobe_dialouge_part_four] run tag @s remove quest_spacecraft_waldobe_dialouge_part_four
 
 
 execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_three,scores={yes=1..,no=0}] as @p[tag=quest_spacecraft_waldobe_dialouge_part_three,scores={yes=1..,no=0}] run tag @s add quest_spacecraft_waldobe_dialouge_part_five
