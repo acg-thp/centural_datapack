@@ -15,7 +15,7 @@ execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_two] as @p[tag=q
 execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_two] as @p[tag=quest_spacecraft_waldobe_dialouge_part_two] at @s if entity @e[tag=waldobe,distance=..4] run scoreboard players enable @s no
 
 execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_two] as @p[tag=quest_spacecraft_waldobe_dialouge_part_two] at @s if entity @e[tag=waldobe,distance=..4] run tag @s add quest_spacecraft_waldobe_dialouge_part_three
-execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_two] as @p[tag=quest_spacecraft_waldobe_dialouge_part_two] at @s if entity @e[tag=waldobe,distance=..4] run tag @s remove quest_spacecraft_waldobe_part_two
+execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_two] as @p[tag=quest_spacecraft_waldobe_dialouge_part_two] at @s if entity @e[tag=waldobe,distance=..4] run tag @s remove quest_spacecraft_waldobe_dialouge_part_two
 
 execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_three,scores={yes=0,no=1..}] run tag @s add quest_spacecraft_waldobe_dialouge_part_four
 execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four,scores={yes=0,no=1..}] run tellraw @s "Id really like to get out of the Underworld sometime soon..."
