@@ -1,3 +1,5 @@
+#Waldobe Handler
+function centural:waldobe
 
 #Logout Reset
 execute if entity @p[scores={logout_reset=1..}] as @a[scores={logout_reset=1..}] run tag @s remove in_underworld
