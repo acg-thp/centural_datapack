@@ -1,11 +1,5 @@
 execute if entity @e[tag=finder] at @e[tag=finder] run particle minecraft:portal ~ ~ ~ 0 0 0 1 1 force @p[distance=..6]
 
-#If Finder Has Found Parent Teleport To Void Collection Chamber
-execute if entity @e[tag=finder] as @e[tag=finder] at @s if entity @e[tag=finder_parent,distance=..1] run tp @s[type=pig,tag=finder] 0 -1023 0
-execute if entity @e[tag=finder] as @e[tag=finder] at @s unless entity @e[tag=finder_parent,distance=..8] run tp @s[type=pig,tag=finder] 0 -1023 0
-#If Searchable Has A Parent Without Any Nearby Finder Teleport To Void Collection Chamber
-execute if entity @e[tag=searchable] at @e[tag=searchable] if entity @e[tag=finder_parent,distance=..1] unless entity @e[tag=finder,distance=..8] run tp @e[type=pig,tag=finder_parent,distance=..1] 0 -1023 0
-execute if entity @e[tag=searchable] at @e[tag=searchable] if entity @e[tag=finder_parent,distance=..1] unless entity @p[tag=searching,distance=..8] run tp @e[type=pig,tag=finder_parent,distance=..1] 0 -1023 0
 
 
 execute if entity @p[tag=searching] as @a[tag=searching,scores={search_timer=50}] at @s if entity @e[tag=searchable,distance=..6] run tag @s add found_searchable
@@ -44,3 +38,10 @@ execute if entity @p[scores={search=1..}] as @a[scores={search=1..}] if entity @
 execute if entity @p[scores={search=1..}] as @a[scores={search=1..}] run scoreboard players reset @s search
 
 execute as @a unless entity @s[scores={search=-2147483648..2147483647}] unless entity @s[scores={search_timer=0..50}] run scoreboard players enable @s search
+
+#If Finder Has Found Parent Teleport To Void Collection Chamber
+execute if entity @e[tag=finder] as @e[tag=finder] at @s if entity @e[tag=finder_parent,distance=..1] run tp @s[type=pig,tag=finder] 0 -1023 0
+execute if entity @e[tag=finder] as @e[tag=finder] at @s unless entity @e[tag=finder_parent,distance=..8] run tp @s[type=pig,tag=finder] 0 -1023 0
+#If Searchable Has A Parent Without Any Nearby Finder Teleport To Void Collection Chamber
+execute if entity @e[tag=searchable] at @e[tag=searchable] if entity @e[tag=finder_parent,distance=..1] unless entity @e[tag=finder,distance=..8] run tp @e[type=pig,tag=finder_parent,distance=..1] 0 -1023 0
+execute if entity @e[tag=searchable] at @e[tag=searchable] if entity @e[tag=finder_parent,distance=..1] unless entity @p[tag=searching,distance=..8] run tp @e[type=pig,tag=finder_parent,distance=..1] 0 -1023 0
