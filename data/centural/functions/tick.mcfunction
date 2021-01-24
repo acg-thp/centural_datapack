@@ -1,5 +1,8 @@
+#Search/Searchables
+function centural:search/tick
+
 #Spacecraft
-function centural:spacecraft
+function centural:spacecraft/tick
 
 #Underworld
 function centural:underworld_air
