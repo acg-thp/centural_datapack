@@ -37,7 +37,7 @@ execute if entity @p[scores={search=1..}] as @a[scores={search=1..}] if entity @
 
 execute if entity @p[scores={search=1..}] as @a[scores={search=1..}] run scoreboard players reset @s search
 
-execute as @a unless entity @s[scores={search=-2147483648..2147483647}] unless entity @s[scores={search_timer=0..50}] run scoreboard players enable @s search
+execute as @a unless entity @s[scores={search=-2147483648..2147483647}] unless entity @s[scores={search_timer=..50}] run scoreboard players enable @s search
 
 #If Finder Has Found Parent Teleport To Void Collection Chamber
 execute if entity @e[tag=finder] as @e[tag=finder] at @s if entity @e[tag=finder_parent,distance=..1] run tp @s[type=pig,tag=finder] 0 -1023 0
