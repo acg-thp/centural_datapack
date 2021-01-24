@@ -8,18 +8,18 @@ execute if entity @e[tag=searchable] at @e[tag=searchable] if entity @e[tag=find
 
 execute if entity @p[tag=searching] as @a[tag=searching,scores={search_timer=50}] at @s if entity @e[tag=searchable,distance=..6] run tag @s add found_searchable
 
-execute if entitiy @p[tag=found_searchable] as @a[tag=found_searchable] at @s run teleport @s ~ ~ ~ facing entity @e[tag=searchable,distance=..6,limit=1]
+execute if entity @p[tag=found_searchable] as @a[tag=found_searchable] at @s run teleport @s ~ ~ ~ facing entity @e[tag=searchable,distance=..6,limit=1]
 
-execute if entitiy @p[tag=found_searchable] as @a[tag=found_searchable] at @s run tellraw @s "You seem to have spotted a searchable location."
+execute if entity @p[tag=found_searchable] as @a[tag=found_searchable] at @s run tellraw @s "You seem to have spotted a searchable location."
 
-execute if entitiy @p[tag=found_searchable] as @a[tag=found_searchable] at @s run scoreboard players reset @s search
+execute if entity @p[tag=found_searchable] as @a[tag=found_searchable] at @s run scoreboard players reset @s search
 
-execute if entitiy @p[tag=found_searchable] as @a[tag=found_searchable] at @s at @e[tag=searchable,distance=..6,limit=1] unless @e[tag=finder_parent,distance=..1] run summon pig ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["finder_parent"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980,ShowParticles:1b}]}
+execute if entity @p[tag=found_searchable] as @a[tag=found_searchable] at @s at @e[tag=searchable,distance=..6,limit=1] unless @e[tag=finder_parent,distance=..1] run summon pig ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["finder_parent"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980,ShowParticles:1b}]}
 
-execute if entitiy @p[tag=found_searchable] as @a[tag=found_searchable] at @s run summon pig ~ ~ ~ {Silent:1b,Invulnerable:1b,Age:-300,Tags:["finder"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980,ShowParticles:1b}]}
+execute if entity @p[tag=found_searchable] as @a[tag=found_searchable] at @s run summon pig ~ ~ ~ {Silent:1b,Invulnerable:1b,Age:-300,Tags:["finder"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980,ShowParticles:1b}]}
 
-execute if entitiy @p[tag=searching,scores={search_timer=50}] as @a[tag=searching,scores={search_timer=50}] at @s run tag @s remove searching
-execute if entitiy @p[tag=found_searchable] as @a[tag=found_searchable] at @s run tag @s remove found_searchable
+execute if entity @p[tag=searching,scores={search_timer=50}] as @a[tag=searching,scores={search_timer=50}] at @s run tag @s remove searching
+execute if entity @p[tag=found_searchable] as @a[tag=found_searchable] at @s run tag @s remove found_searchable
 
 
 
