@@ -40,8 +40,8 @@ execute if entity @p[scores={search=1..}] as @a[scores={search=1..}] run scorebo
 execute as @a unless entity @s[scores={search=-2147483648..2147483647}] unless entity @s[scores={search_timer=..50}] run scoreboard players enable @s search
 
 #If Finder Has Found Parent Teleport To Void Collection Chamber
-execute if entity @e[tag=finder] as @e[tag=finder] at @s unless entity @p[distance=..12] run tp @s -1023 0
-execute if entity @e[tag=finder] as @e[tag=finder] at @s unless entity @e[tag=finder_parent,distance=..12] run tp @s -1023 0
+execute if entity @e[tag=finder] as @e[tag=finder] at @s unless entity @p[distance=..12] run tp @s 0 -1023 0
+execute if entity @e[tag=finder] as @e[tag=finder] at @s unless entity @e[tag=finder_parent,distance=..12] run tp @s 0 -1023 0
 #execute if entity @e[tag=finder] as @e[tag=finder] at @s if entity @e[tag=finder_parent,distance=..1] run tp @s[type=pig,tag=finder] 0 -1023 0
 #execute if entity @e[tag=finder] as @e[tag=finder] at @s unless entity @e[tag=finder_parent,distance=..8] run tp @s[type=pig,tag=finder] 0 -1023 0
 #If Searchable Has A Parent Without Any Nearby Finder Teleport To Void Collection Chamber
