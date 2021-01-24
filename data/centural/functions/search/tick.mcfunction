@@ -25,7 +25,7 @@ execute if entity @e[tag=finder,nbt={Age:-1}] as @e[tag=finder,nbt={Age:-1}] run
 execute if entity @p[scores={search=1..},tag=!searching] as @a[scores={search=1..},tag=!searching] run tellraw @s "You begin to search the region...."
 execute if entity @p[scores={search=1..},tag=!searching] as @a[scores={search=1..},tag=!searching] run tag @s add searching
 
-execute if entity @e[tag=searchable] at @e[tag=searchable] if entity @p[distance=..6,scores={search_timer=50..}] as @a[distance=..6,scores={search_timer=50..}] run scoreboard players set @s search_timer 0
+#execute if entity @e[tag=searchable] at @e[tag=searchable] if entity @p[distance=..6,scores={search_timer=50..}] as @a[distance=..6,scores={search_timer=50..}] run scoreboard players set @s search_timer 0
 
 execute unless entity @p[scores={search_timer=..51}] run scoreboard objectives remove search_timer
 
