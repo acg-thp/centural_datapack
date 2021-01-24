@@ -50,3 +50,5 @@ execute if entity @e[tag=finder_parent] as @e[tag=finder_parent] at @s unless en
 execute if entity @e[tag=finder_parent] as @e[tag=finder_parent] at @s unless entity @e[tag=finder,distance=..12] run tp @s 0 -1023 0
 #execute if entity @e[tag=searchable] at @e[tag=searchable] if entity @e[tag=finder_parent,distance=..1] unless entity @e[tag=finder,distance=..8] run tp @e[type=pig,tag=finder_parent,distance=..1] 0 -1023 0
 #execute if entity @e[tag=searchable] at @e[tag=searchable] if entity @e[tag=finder_parent,distance=..1] unless entity @p[tag=searching,distance=..8] run tp @e[type=pig,tag=finder_parent,distance=..1] 0 -1023 0
+
+execute if entity @e[tag=finder] as @e[tag=finder] at @s if entity @e[tag=finder_parent,distance=..1] run tp @s 0 -1023 0
