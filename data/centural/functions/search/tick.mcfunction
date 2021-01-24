@@ -14,7 +14,7 @@ execute if entity @p[tag=found_searchable] as @a[tag=found_searchable] at @s run
 
 execute if entity @p[tag=found_searchable] as @a[tag=found_searchable] at @s run scoreboard players reset @s search
 
-execute if entity @p[tag=found_searchable] as @a[tag=found_searchable] at @s at @e[tag=searchable,distance=..6,limit=1] unless @e[tag=finder_parent,distance=..1] run summon pig ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["finder_parent"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980,ShowParticles:1b}]}
+execute if entity @p[tag=found_searchable] as @a[tag=found_searchable] at @s at @e[tag=searchable,distance=..6,limit=1] unless entity @e[tag=finder_parent,distance=..1] run summon pig ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["finder_parent"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980,ShowParticles:1b}]}
 
 execute if entity @p[tag=found_searchable] as @a[tag=found_searchable] at @s run summon pig ~ ~ ~ {Silent:1b,Invulnerable:1b,Age:-300,Tags:["finder"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980,ShowParticles:1b}]}
 
@@ -33,7 +33,7 @@ execute if entity @e[tag=searchable] at @e[tag=searchable] if entity @p[distance
 
 execute unless entity @p[scores={search_timer=..51}] run scoreboard objectives remove search_timer
 
-execute if entity @p[scores={search=1..}] as @a[scores={search=1..}] if entity @e[tag=searchable] at @e[tag=searchable] if entity @s[distance=..6] unless @s[scores={search_timer=0..}] run scoreboard objectives add search_timer minecraft.custom:minecraft.play_one_minute "Search timer determines when the player can search again"
+execute if entity @p[scores={search=1..}] as @a[scores={search=1..}] if entity @e[tag=searchable] at @e[tag=searchable] if entity @s[distance=..6] unless entity @s[scores={search_timer=0..}] run scoreboard objectives add search_timer minecraft.custom:minecraft.play_one_minute "Search timer determines when the player can search again"
 #scoreboard objectives setdisplay sidebar search_timer
 #scoreboard players set @a search_timer 50
 #execute if entity @e[tag=searchable] as @e[tag=searchable] at @s if entity @p[distance=..6] run scoreboard players set @p[distance=..6] search_timer 0
