@@ -1,3 +1,6 @@
+#Player Handler
+function centural:player/tick
+
 #Search/Searchables
 function centural:search/tick
 
