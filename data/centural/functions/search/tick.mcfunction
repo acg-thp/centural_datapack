@@ -64,7 +64,7 @@ execute if entity @p[scores={coordinates=1..},tag=!coordinates] as @a[scores={co
 execute if entity @p[scores={coordinates=1..},tag=!coordinates] as @a[scores={coordinates=1..},tag=!coordinates] run tag @s add coordinates
 execute if entity @p[scores={coordinates=1..},tag=coordinates] as @a[scores={coordinates=1..},tag=coordinates] run scoreboard players reset @s coordinates
 
-execute if entity @p[tag=coordinates] as @a[tag=coordinates] run title @s actionbar ["X: "{"nbt":"Pos[0]","entity":"@s"},", Y: ",{"nbt":"Pos[1]","entity":"@s"},", Z: ",{"nbt":"Pos[2]","entity":"@s"}]
+execute if entity @p[tag=coordinates] as @a[tag=coordinates] run title @s actionbar ["X: ",{"nbt":"Pos[0]","entity":"@s"},", Y: ",{"nbt":"Pos[1]","entity":"@s"},", Z: ",{"nbt":"Pos[2]","entity":"@s"}]
 
 
 execute if entity @p[scores={coordinates=..-1},tag=coordinates] as @a[scores={coordinates=..-1},tag=coordinates] run tellraw @s "Disabling Coordinate."
