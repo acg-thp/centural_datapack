@@ -1,6 +1,6 @@
 
 #Spacecraft Tick Handler
-function centural:spacecraft/tick
+function centural:spacecraft/load
 
 
 #Spread Libraries At Spawn

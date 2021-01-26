@@ -52,3 +52,23 @@ execute if entity @e[tag=finder_parent] as @e[tag=finder_parent] at @s unless en
 #execute if entity @e[tag=searchable] at @e[tag=searchable] if entity @e[tag=finder_parent,distance=..1] unless entity @p[tag=searching,distance=..8] run tp @e[type=pig,tag=finder_parent,distance=..1] 0 -1023 0
 
 execute if entity @e[tag=finder] as @e[tag=finder] at @s if entity @e[tag=finder_parent,distance=..1] run tp @s 0 -1023 0
+
+
+
+#Start Coordinates
+
+execute as @a unless entity @s[scores={coordinates=-2147483648..2147483647}] run tellraw @s "[ENABLED] /trigger coordinates"
+execute as @a unless entity @s[scores={coordinates=-2147483648..2147483647}] run scoreboard players enable @s coordinates
+
+execute if entity @p[scores={coordinates=1..},tag=!coordinates] as @a[scores={coordinates=1..},tag=!coordinates] run tellraw @s "Enabling Coordinates (To disable type /trigger coordinates set -1)."
+execute if entity @p[scores={coordinates=1..},tag=!coordinates] as @a[scores={coordinates=1..},tag=!coordinates] run tag @s add coordinates
+execute if entity @p[scores={coordinates=1..},tag=coordinates] as @a[scores={coordinates=1..},tag=coordinates] run scoreboard players reset @s coordinates
+
+execute if entity @p[tag=coordinates] as @a[tag=coordinates] run title @s actionbar ["X: "{"nbt":"Pos[0]","entity":"@s"},", Y: ",{"nbt":"Pos[1]","entity":"@s"},", Z: ",{"nbt":"Pos[2]","entity":"@s"}]
+
+
+execute if entity @p[scores={coordinates=..-1},tag=coordinates] as @a[scores={coordinates=..-1},tag=coordinates] run tellraw @s "Disabling Coordinate."
+execute if entity @p[scores={coordinates=..-1},tag=coordinates] as @a[scores={coordinates=..-1},tag=coordinates] run tag @s remove coordinates
+execute if entity @p[scores={coordinates=..-1},tag=!coordinates] as @a[scores={coordinates=..-1},tag=!coordinates] run scoreboard players reset @s coordinates
+
+#End Coordinates
