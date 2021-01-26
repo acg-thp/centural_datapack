@@ -1,3 +1,6 @@
+#Seach Load Handler
+function centural:search/load
+
 
 #Spacecraft Tick Handler
 function centural:spacecraft/load
