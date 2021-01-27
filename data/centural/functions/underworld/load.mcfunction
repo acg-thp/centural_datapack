@@ -15,8 +15,8 @@ tp @e[type=bat,tag=air] 0 -1024 0
 kill @e[type=bat,tag=air]
 execute positioned 0 -1024 0 run kill @e[type=item,distance=..6]
 
-tp @e[type=bat,tag=torture] 0 -1024 0
-kill @e[type=bat,tag=torture]
+tp @e[type=slime,tag=torture] 0 -1024 0
+kill @e[type=slime,tag=torture]
 execute positioned 0 -1024 0 run kill @e[type=item,distance=..6]
 
 
