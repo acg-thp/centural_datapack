@@ -1,3 +1,6 @@
+#
+function centural:underworld/tick
+
 #Player Handler
 function centural:player/tick
 
