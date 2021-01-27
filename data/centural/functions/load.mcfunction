@@ -11,6 +11,8 @@ function centural:search/load
 #Spacecraft Tick Handler
 function centural:spacecraft/load
 
+#Logout Handler
+function centural:logout/load
 
 #Spread Libraries At Spawn
 #execute if entity @e[tag=quest_spacecraft_library] at @e[tag=quest_spacecraft_library] run fill ~ ~ ~ ~ ~ ~ air 0 replace bookshelf
