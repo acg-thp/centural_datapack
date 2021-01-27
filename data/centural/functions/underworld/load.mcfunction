@@ -21,16 +21,6 @@ execute positioned 0 -1024 0 run kill @e[type=item,distance=..6]
 
 
 #Core Generation
-execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
 execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
 execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
 execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
@@ -42,19 +32,18 @@ execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,Pe
 execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
 execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
 
+execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
 
 
-
-execute positioned -48 -732 -48 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned -48 -732 -48 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned -48 -732 -48 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned -48 -732 -48 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned -48 -732 -48 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned -48 -732 -48 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned -48 -732 -48 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned -48 -732 -48 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned -48 -732 -48 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned -48 -732 -48 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
 execute positioned -48 -732 -48 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
 execute positioned -48 -732 -48 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
 execute positioned -48 -732 -48 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
@@ -67,16 +56,17 @@ execute positioned -48 -732 -48 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1
 execute positioned -48 -732 -48 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
 
 
-execute positioned -32 -700 32 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned -32 -700 32 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned -32 -700 32 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned -32 -700 32 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned -32 -700 32 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned -32 -700 32 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned -32 -700 32 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned -32 -700 32 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned -32 -700 32 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned -32 -700 32 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned -48 -732 -48 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned -48 -732 -48 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned -48 -732 -48 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned -48 -732 -48 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned -48 -732 -48 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned -48 -732 -48 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned -48 -732 -48 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned -48 -732 -48 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned -48 -732 -48 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned -48 -732 -48 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+
 execute positioned -32 -700 32 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
 execute positioned -32 -700 32 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
 execute positioned -32 -700 32 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
@@ -87,3 +77,14 @@ execute positioned -32 -700 32 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b
 execute positioned -32 -700 32 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
 execute positioned -32 -700 32 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
 execute positioned -32 -700 32 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+
+execute positioned -32 -700 32 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned -32 -700 32 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned -32 -700 32 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned -32 -700 32 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned -32 -700 32 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned -32 -700 32 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned -32 -700 32 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned -32 -700 32 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned -32 -700 32 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned -32 -700 32 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
