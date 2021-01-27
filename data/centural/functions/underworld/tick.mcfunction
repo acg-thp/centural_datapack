@@ -9,6 +9,6 @@ execute if entity @e[tag=underworld_handler] at @e[tag=underworld_handler] run p
 
 execute if entity @e[tag=underworld_handler] at @e[tag=underworld_handler] at @a[distance=..16] run summon arrow ~ ~2 ~
 
-execute if entity @e[tag=air] as @e[tag=air] at @s unless entity @e[tag=torture,distnace=..16] at @e[tag=torture,limit=1] run tp @s ~ ~ ~
+execute if entity @e[tag=air] as @e[tag=air] at @s unless entity @e[tag=torture,distance=..16] at @e[tag=torture,limit=1] run tp @s ~ ~ ~
 
 
