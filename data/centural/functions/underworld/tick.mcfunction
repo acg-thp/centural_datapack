@@ -6,3 +6,7 @@ execute if entity @e[tag=torture] at @e[tag=torture] run fill ~ ~-1 ~ ~ ~-1 ~ mi
 
 execute if entity @e[tag=underworld_handler] at @e[tag=underworld_handler] run particle minecraft:flame ~ ~ ~ 1 1 1 1 1 force @a[distance=..128]
 execute if entity @e[tag=underworld_handler] at @e[tag=underworld_handler] run playsound minecraft:block.fire.ambient ambient @a[distance=..16] ~ ~ ~ 16 1
+
+execute if entity @e[tag=underworld_handler] at @e[tag=underworld_handler] at @a[distance=..16] run summon arrow ~ ~2 ~
+
+
