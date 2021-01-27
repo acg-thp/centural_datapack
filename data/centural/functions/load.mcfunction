@@ -1,3 +1,5 @@
+function centural:underworld/load
+
 #Player Load Handler
 function centural:player/load
 
