@@ -4,7 +4,7 @@ scoreboard objectives remove underworld_loop
 scoreboard objectives add underworld_loop dummy "Iterator used to deload generated underworld content"
 
 execute if entity @e[tag=underworld_handler] as @e[tag=underworld_handler] run kill @s[type=armor_stand]
-execute unless entity @e[tag=underworld_handler] positioned 0 -768 0 run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Marker:1b,Tags:["underworld_handler"]}
+execute unless entity @e[tag=underworld_handler] positioned 0 -768 0 run summon armor_stand ~ ~ ~ {Nogravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Tags:["underworld_handler"]}
 
 execute if entity @e[tag=underworld_handler] as @e[tag=underworld_handler] run scoreboard players set @s underworld_loop 512
 
