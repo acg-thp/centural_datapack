@@ -5,3 +5,4 @@ execute if entity @e[tag=torture] as @e[tag=torture] at @s positioned ~ -768 ~ u
 execute if entity @e[tag=torture] at @e[tag=torture] run fill ~ ~-1 ~ ~ ~-1 ~ minecraft:magma_block replace air
 
 execute if entity @e[tag=underworld_handler] at @e[tag=underworld_handler] run particle minecraft:flame ~ ~ ~ 1 1 1 1 1 force @a[distance=..128]
+execute if entity @e[tag=underworld_handler] at @e[tag=underworld_handler] run playsound minecraft:block.fire.ambient ambient @a[distance=..16] ~ ~ ~ 16 1

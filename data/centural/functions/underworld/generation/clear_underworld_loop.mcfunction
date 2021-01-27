@@ -5,3 +5,4 @@ execute if entity @e[tag=underworld_handler,scores={underworld_loop=0..}] run sc
 execute if entity @e[tag=underworld_handler,scores={underworld_loop=0..}] run function centural:underworld/generation/clear_underworld_loop
 
 execute if entity @e[tag=underworld_handler,scores={underworld_loop=..0}] run tp @e[tag=underworld_handler,scores={underworld_loop=..0}] 0 -768 0
+
