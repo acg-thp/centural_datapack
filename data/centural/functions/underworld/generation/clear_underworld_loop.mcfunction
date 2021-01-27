@@ -4,4 +4,4 @@ execute as @e[tag=underworld_handler,scores={underworld_loop=0..}] at @s run tp 
 execute if entity @e[tag=underworld_handler,scores={underworld_loop=0..}] run scoreboard players remove @e[tag=underworld_handler] underworld_loop 1
 execute if entity @e[tag=underworld_handler,scores={underworld_loop=0..}] run function centural:underworld/generation/clear_underworld_loop
 
-execute if entity @e[tag=underworld_handler,scores={underworld_loop=..0}] run kill @e[tag=underworld_handler,type=armor_stand]
+execute if entity @e[tag=underworld_handler,scores={underworld_loop=..0}] run tp @e[tag=underworld_handler,scores={underworld_loop=..0}] ~ -768 ~
