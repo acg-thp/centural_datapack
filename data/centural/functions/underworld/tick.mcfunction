@@ -4,7 +4,7 @@ execute if entity @e[tag=air] at @e[tag=air] run fill ~-1 ~-1 ~-1 ~-1 ~1 ~-1 min
 execute if entity @e[tag=torture] as @e[tag=torture] at @s positioned ~ -768 ~ unless entity @s[dy=512] run tp @s ~ -768 ~
 execute if entity @e[tag=torture] at @e[tag=torture] run fill ~ ~-1 ~ ~ ~-1 ~ minecraft:magma_block replace air
 
-execute if entity @e[tag=torture] at @e[tag=torture] if entity @e[tag=underworld_handler,distance=64..128] run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 minecraft:magma_block replace air
+#execute if entity @e[tag=torture] at @e[tag=torture] positioned ~-64 ~-64 ~-64 unless entity @e[tag=underworld_handler,dx=128,dy=128,dz=128] run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 minecraft:magma_block replace air
 
 execute if entity @e[tag=underworld_handler] at @e[tag=underworld_handler] run particle minecraft:flame ~ ~ ~ 1 1 1 1 1 force @a[distance=..128]
 execute if entity @e[tag=underworld_handler] at @e[tag=underworld_handler] run playsound minecraft:block.fire.ambient ambient @a[distance=..16] ~ ~ ~ 16 1
