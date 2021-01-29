@@ -1,0 +1,1 @@
+function scoreboard_handler:objectives/remove/scoreboard_objectives_remove_handler
