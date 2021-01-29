@@ -1,0 +1,1 @@
+execute store result score @s position_x run data get entity @s Pos[0] 1

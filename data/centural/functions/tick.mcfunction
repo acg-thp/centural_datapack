@@ -1,3 +1,8 @@
+
+#Legacy Handler
+function core_handler:core_tick_handler
+
+#
 function centural:warp/tick
 
 #

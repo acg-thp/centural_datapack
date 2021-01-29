@@ -1,0 +1,1 @@
+execute if entity @p[tag=jail] as @a[tag=jail] at @s unless entity @e[tag=jail_cell,distance=..5] run tp @s @e[tag=jail_cell,sort=random,limit=1]

@@ -1,0 +1,9 @@
+execute unless entity @s[tag=run_delete_home] run tag @s add run_delete_home
+execute if entity @s[tag=run_delete_home] run scoreboard players set @s home_x 2
+execute if entity @s[tag=run_delete_home] run scoreboard players set @s home_y 72
+execute if entity @s[tag=run_delete_home] run scoreboard players set @s home_z -1
+execute if entity @s[tag=run_delete_home] run tellraw @s[tag=run_delete_home] {"text":"Home Deleted and Reset to 2, 72, -1"}
+execute if entity @s[tag=run_delete_home] run function home_handler:enable/enable_delete_home
+execute if entity @s[tag=run_delete_home] run tag @s remove run_delete_home
+#tellraw @s ["",{"text":"[","bold":true,"color":"dark_blue"},{"text":"C","bold":true,"color":"dark_green","hoverEvent":{"action":"show_text","contents":["",{"text":"Datapack By: Respawn_101","color":"aqua"}]}},{"text":"e","bold":true,"color":"dark_aqua","hoverEvent":{"action":"show_text","contents":["",{"text":"Datapack By: Respawn_101","color":"aqua"}]}},{"text":"n","bold":true,"color":"dark_red","hoverEvent":{"action":"show_text","contents":["",{"text":"Datapack By: Respawn_101","color":"aqua"}]}},{"text":"t","bold":true,"color":"dark_purple","hoverEvent":{"action":"show_text","contents":["",{"text":"Datapack By: Respawn_101","color":"aqua"}]}},{"text":"u","bold":true,"color":"gold","hoverEvent":{"action":"show_text","contents":["",{"text":"Datapack By: Respawn_101","color":"aqua"}]}},{"text":"r","bold":true,"color":"green","hoverEvent":{"action":"show_text","contents":["",{"text":"Datapack By: Respawn_101","color":"aqua"}]}},{"text":"a","bold":true,"color":"aqua","hoverEvent":{"action":"show_text","contents":["",{"text":"Datapack By: Respawn_101","color":"aqua"}]}},{"text":"l","bold":true,"color":"dark_aqua","hoverEvent":{"action":"show_text","contents":["",{"text":"Datapack By: Respawn_101","color":"aqua"}]}},{"text":"] ","bold":true,"color":"dark_blue"},{"text":"Home deleted!","color":"dark_red"}]
+

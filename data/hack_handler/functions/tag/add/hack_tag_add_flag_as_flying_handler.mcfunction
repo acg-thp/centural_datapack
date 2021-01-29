@@ -1,0 +1,1 @@
+tag @s[team=!administrator,team=!builder,team=!moderator] add flag_as_flying

@@ -1,0 +1,1 @@
+scoreboard players enable @s[scores={mod_level=1..}] MOD

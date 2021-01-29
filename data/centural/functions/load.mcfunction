@@ -1,3 +1,5 @@
+function core_handler:core_load_handler
+
 function centural:warp/load
 
 function centural:underworld/load
