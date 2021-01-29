@@ -55,6 +55,8 @@ execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four] as @a[tag=
 
 execute if entity @p[tag=in_dialouge] as @a[tag=in_dialouge] at @s unless entity @e[tag=waldobe,distance=..16] run tag @s remove in_dialouge
 
+execute positioned 10 -768 10 unless entity @e[tag=waldobe] run summon zombie_villager ~ ~ ~ {OnGround:1b,NoGravity:0b,Silent:0b,Invulnerable:1b,CustomNameVisible:1b,Team:"friendly",Tags:["waldobe"],CustomName:'[{"keybind":"key.sprint"},{"text":"Waldobe"}]'}
+
 
 
 
