@@ -47,5 +47,12 @@ execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_five,scores={yes
 
 
 
+#
+execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_one] as @a[tag=quest_spacecraft_waldobe_dialouge_part_one] at @s unless entity @e[tag=waldobe,distance=..16] run tag @s remove quest_spacecraft_waldobe_dialouge_part_one
+execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_two] as @a[tag=quest_spacecraft_waldobe_dialouge_part_two] at @s unless entity @e[tag=waldobe,distance=..16] run tag @s remove quest_spacecraft_waldobe_dialouge_part_two
+execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_three] as @a[tag=quest_spacecraft_waldobe_dialouge_part_three] at @s unless entity @e[tag=waldobe,distance=..16] run tag @s remove quest_spacecraft_waldobe_dialouge_part_three
+execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four] as @a[tag=quest_spacecraft_waldobe_dialouge_part_four] at @s unless entity @e[tag=waldobe,distance=..16] run tag @s remove quest_spacecraft_waldobe_dialouge_part_four
+
+
 
 
