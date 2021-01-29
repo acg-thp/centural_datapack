@@ -1,5 +1,5 @@
 execute if entity @e[tag=air] as @e[tag=air] at @s positioned ~ -768 ~ unless entity @s[dy=512] run tp @s ~ -768 ~
-execute if entity @e[tag=air] at @e[tag=air] run fill ~-1 ~1 ~-1 ~-1 ~1 ~-1 minecraft:air replace minecraft:magma_block
+execute if entity @e[tag=air] at @e[tag=air] run fill ~-1 ~-3 ~-1 ~-1 ~-2 ~-1 minecraft:air replace minecraft:magma_block
 execute if entity @e[tag=air] at @e[tag=air] run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 1 1 force @a[distance=..128]
 
 execute if entity @e[tag=torture] as @e[tag=torture] at @s positioned ~ -768 ~ unless entity @s[dy=512] run tp @s ~ -768 ~
