@@ -17,5 +17,5 @@ execute if entity @p[tag=warp_underworld,scores={temporary_timer=150}] as @a[tag
 execute if entity @p[tag=warp_underworld,scores={temporary_timer=150..}] as @a[tag=warp_underworld,scores={temporary_timer=150..}] run tag @s remove warp_underworld
 execute unless entity @p[tag=warp_underworld] run scoreboard objectives remove temporary_timer
 
-execute if entity @p[scores={warp=-2147483648..2147483647}] as @a[scores={warp=-2147483648..2147483647}] unless entity @s[tag=warp_underworld] run scoreboard players reset @s warp
+execute if entity @p[scores={warp=-2147483648..2147483647}] as @a[scores={warp=-2147483648..2147483647}] unless entity @s[scores={temporary_timer=..150}] run scoreboard players reset @s warp
 
