@@ -11,7 +11,7 @@ execute if entity @p[tag=warp_underworld,scores={temporary_timer=150..}] as @a[t
 execute if entity @p[tag=warp_underworld,scores={temporary_timer=150..}] as @a[tag=warp_underworld,scores={temporary_timer=100..150}] at @s run particle minecraft:cloud ~ ~2 ~ 1 0 1 1 6 force @a[distance=..16]
 execute if entity @p[tag=warp_underworld,scores={temporary_timer=150..}] as @a[tag=warp_underworld,scores={temporary_timer=0..50}] run playsound minecraft:block.portal.ambient ambient @s
 execute if entity @p[tag=warp_underworld,scores={temporary_timer=150..}] as @a[tag=warp_underworld,scores={temporary_timer=50..100}] run playsound minecraft:block.portal.trigger ambient @s
-execute if entity @p[tag=warp_underworld,scores={temporary_timer=150..}] as @a[tag=warp_underworld,scores={temporary_timer=100..150}] playsound minecraft:block.portal.travel ambient @s
+execute if entity @p[tag=warp_underworld,scores={temporary_timer=150..}] as @a[tag=warp_underworld,scores={temporary_timer=100..150}] run playsound minecraft:block.portal.travel ambient @s
 execute if entity @p[tag=warp_underworld,scores={temporary_timer=150..}] as @a[tag=warp_underworld,scores={temporary_timer=150..}] run tp @s 0 -767 0
 execute if entity @p[tag=warp_underworld,scores={temporary_timer=150..}] as @a[tag=warp_underworld,scores={temporary_timer=150..}] run tag @s remove warp_underworld
 execute unless entity @p[tag=warp_underworld] run scoreboard objectives remove temporary_timer
