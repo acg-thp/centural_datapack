@@ -9,7 +9,7 @@ execute unless entity @e[tag=underworld_handler] positioned 0 -768 0 run summon 
 execute if entity @e[tag=underworld_handler] as @e[tag=underworld_handler] run scoreboard players set @s underworld_loop 512
 
 
-execute if entity @e[tag=underworld_handler,scores={underowrld_loop=0..}] run title @a title [{"color":"green","text":"[||"},{"color":"red","text":"||||||||||||||||||]"}]
+ execute if entity @e[tag=underworld_handler,scores={underowrld_loop=0..}] run title @a title [{"color":"green","text":"[||"},{"color":"red","text":"||||||||||||||||||]"}]
 execute if entity @e[tag=underworld_handler,scores={underworld_loop=0..}] run tellraw @a "De-generating underworld loop starting"
 execute if entity @e[tag=underworld_handler,scores={underworld_loop=0..}] run function centural:underworld/generation/clear_underworld_loop
 execute unless entity @e[tag=underworld_handler,scores={underowrld_loop=0..}] run title @a title [{"color":"green","text":"[||||||||||||||||||"},{"color":"red","text":"||]"}]
@@ -22,16 +22,27 @@ kill @e[type=slime,tag=torture]
 execute positioned 0 -1024 0 run kill @e[type=item,distance=..6]
 
 #Core Generation
-execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
-execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+execute positioned 0 -768 0 run summon slime ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Glowing:0b,CustomNameVisible:0b,PersistenceRequired:1b,Tags:["torture"],Passengers:[{id:"minecraft:bat",Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}]}],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}]}
+execute positioned 0 -768 0 run summon slime ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Glowing:0b,CustomNameVisible:0b,PersistenceRequired:1b,Tags:["torture"],Passengers:[{id:"minecraft:bat",Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}]}],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}]}
+execute positioned 0 -768 0 run summon slime ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Glowing:0b,CustomNameVisible:0b,PersistenceRequired:1b,Tags:["torture"],Passengers:[{id:"minecraft:bat",Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}]}],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}]}
+execute positioned 0 -768 0 run summon slime ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Glowing:0b,CustomNameVisible:0b,PersistenceRequired:1b,Tags:["torture"],Passengers:[{id:"minecraft:bat",Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}]}],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}]}
+execute positioned 0 -768 0 run summon slime ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Glowing:0b,CustomNameVisible:0b,PersistenceRequired:1b,Tags:["torture"],Passengers:[{id:"minecraft:bat",Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}]}],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}]}
+execute positioned 0 -768 0 run summon slime ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Glowing:0b,CustomNameVisible:0b,PersistenceRequired:1b,Tags:["torture"],Passengers:[{id:"minecraft:bat",Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}]}],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}]}
+execute positioned 0 -768 0 run summon slime ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Glowing:0b,CustomNameVisible:0b,PersistenceRequired:1b,Tags:["torture"],Passengers:[{id:"minecraft:bat",Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}]}],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}]}
+execute positioned 0 -768 0 run summon slime ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Glowing:0b,CustomNameVisible:0b,PersistenceRequired:1b,Tags:["torture"],Passengers:[{id:"minecraft:bat",Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}]}],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}]}
+execute positioned 0 -768 0 run summon slime ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Glowing:0b,CustomNameVisible:0b,PersistenceRequired:1b,Tags:["torture"],Passengers:[{id:"minecraft:bat",Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}]}],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}]}
+execute positioned 0 -768 0 run summon slime ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Glowing:0b,CustomNameVisible:0b,PersistenceRequired:1b,Tags:["torture"],Passengers:[{id:"minecraft:bat",Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}]}],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}]}
+
+#execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+#execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+#execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+#execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+#execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+#execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+#execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+#execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+#execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
+#execute positioned 0 -768 0 run summon slime ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["torture"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
 
 execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
 execute positioned 0 -768 0 run summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["air"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980}]}
