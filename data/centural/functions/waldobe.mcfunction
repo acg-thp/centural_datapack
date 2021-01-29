@@ -53,6 +53,8 @@ execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_two] as @a[tag=q
 execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_three] as @a[tag=quest_spacecraft_waldobe_dialouge_part_three] at @s unless entity @e[tag=waldobe,distance=..16] run tag @s remove quest_spacecraft_waldobe_dialouge_part_three
 execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four] as @a[tag=quest_spacecraft_waldobe_dialouge_part_four] at @s unless entity @e[tag=waldobe,distance=..16] run tag @s remove quest_spacecraft_waldobe_dialouge_part_four
 
+execute if entity @p[tag=in_dialouge] as @a[tag=in_dialouge] at @s unless entity @e[tag=waldobe,distance=..16] run tag @s remove in_dialouge
+
 
 
 
