@@ -22,6 +22,7 @@ execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_two] as @p[tag=q
 
 
 execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_three,scores={action_timer=1..}] as @p[tag=quest_spacecraft_waldobe_dialouge_part_three,scores={action_timer=1..}] at @s if entity @e[tag=waldobe,distance=..4] run scoreboard players set @s yes 1
+execute if entity @e[tag=waldobe] as @e[tag=waldobe] at @s unless entity @p[distance=..8] if entity @p[scores={acion_timer=1..}] run scoreboard objectives remove action_timer
 
 execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_three,scores={yes=0,no=1..}] as @p[tag=quest_spacecraft_waldobe_dialouge_part_three,scores={yes=0,no=1..}] run tag @s add quest_spacecraft_waldobe_dialouge_part_four
 execute if entity @p[tag=quest_spacecraft_waldobe_dialouge_part_four] as @p[tag=quest_spacecraft_waldobe_dialouge_part_four] run playsound minecraft:entity.villager.no master @s ~ ~ ~ 1000000 1
