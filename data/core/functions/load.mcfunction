@@ -6,6 +6,13 @@ data remove storage core:load status
 execute if entity @p[tag=verbose] as @a[tag=verbose] run tellraw @s [{"text":" [ MODIFY ] ","color":"gold"},{"text":"data modify storage core:load status set value loading","clickEvent":{"action":"suggest_command","value":"/data modify storage core:load status set value loading"},"color":"light_purple"}]
 data modify storage core:load status set value loading
 
-#Determine Core requires
+#Teardown
+execute if entity @p[tag=verbose] as @a[tag=verbose] run tellraw @s [{"text":" [ REMOVE ] ","color":"red"},{"text":"data remove storage core:require require","clickEvent":{"action":"suggest_command","value":"/data remove storage core:require require"},"color":"light_purple"}]
+data remove storage core:require require
+
+#Setup Require
+execute store success storage core:require require byte 1 run function require:load
+execute if data storage core:require {require:0b} if entity @p[tag=verbose] as @a[tag=verbose] run tellraw @s [{"text":" [ ERROR ] ","color":"red"},{"text":"function require:load required but not found.","color":"white"}]
+execute if data storage core:require {require:1b} if entity @p[tag=verbose] as @a[tag=verbose] run tellraw @s [{"text":" [ REQUIRE ] ","color":"pink"},{"text":" function require:load","clickEvent":{"action":"suggest_command","value":"/function require:load"},"color":"light_purple"}]
 
 #function load:load
