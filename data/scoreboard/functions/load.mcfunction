@@ -37,3 +37,4 @@ scoreboard objectives add xp xp "XP"
 #
 scoreboard objectives setdisplay list teleport_id
 scoreboard objectives setdisplay belowName health
+say test
