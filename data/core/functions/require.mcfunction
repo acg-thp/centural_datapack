@@ -4,5 +4,6 @@ execute if entity @p[tag=verbose] as @a[tag=verbose] run tellraw @s [{"text":" [
 data remove storage core:require scoreboard
 
 execute store success storage core:require scoreboard byte 1 run function scoreboard:load
+execute if data storage core:require {scoreboard:0b} if entity @p[tag=verbose] as @a[tag=verbose] run execute store success storage core:require scoreboard byte 1 run function scoreboard:load/load
 execute if data storage core:require {scoreboard:0b} if entity @p[tag=verbose] as @a[tag=verbose] run tellraw @s [{"text":" [ ERROR ] ","color":"red"},{"text":"function scoreboard:load required but not found.","color":"white"}]
 execute if data storage core:require {scoreboard:1b} if entity @p[tag=verbose] as @a[tag=verbose] run tellraw @s [{"text":" [ REQUIRE ] ","color":"pink"},{"text":"function scoreboard:load","clickEvent":{"action":"suggest_command","value":"/function scoreboard:load"},"color":"light_purple"}]
