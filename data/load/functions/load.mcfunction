@@ -1,7 +1,7 @@
 data remove storage load:require core
 
 execute store success storage load:require core byte 1 run data get storage core:load {loaded:1b}
-execute if data storage load:require {core:0b} run say "Load requires core but function core:load was not found."
+execute if data storage load:require {core:0b} run say "Load requires core but storage core:load loaded was not true."
 execute if data storage load:require {core:1b} run say "[require] core:load"
 
 
