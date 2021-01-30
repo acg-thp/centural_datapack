@@ -1,4 +1,5 @@
 data remove storage core:load loaded
+data remove storage core:load status
 
-data modify storage core:load loaded set value 1b
-function load:load
+data modify storage core:load status set value "loading"
+#function load:load
