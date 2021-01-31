@@ -13,4 +13,5 @@ execute if data storage scoreboard:require {core:1b} if entity @p[tag=verbose] a
 
 #function load:load
 
+#return true
 help
