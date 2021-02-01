@@ -1,3 +1,3 @@
-execute if entity @p[tag=music_play_the_great_fairy_fountain] as @a[tag=music_play_the_great_fairy_fountain] run function music:the_great_fairy_fountain/play
+execute if entity @p[tag=music_play_the_great_fairy_fountain] as @a[tag=music_play_the_great_fairy_fountain] at @s run function music:the_great_fairy_fountain/play
 execute if entity @e[tag=great_fairy_fountain] as @e[tag=great_fairy_fountain] at @s if entity @p[tag=!music_play_the_great_fairy_fountain,distance=..32] as @a[tag=!music_play_the_great_fairy_fountain,distance=..32] run tag @s add music_play_the_great_fairy_fountain
 execute if entity @p[tag=music_play_the_great_fairy_fountain] as @a[tag=music_play_the_great_fairy_fountain] at @s unless entity @e[tag=great_fairy_fountain,distance=..32] run tag @s remove music_play_the_great_fairy_fountain
