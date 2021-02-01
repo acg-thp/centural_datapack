@@ -16,3 +16,5 @@ execute if data storage core:require {require:0b} if entity @p[tag=verbose] as @
 execute if data storage core:require {require:1b} if entity @p[tag=verbose] as @a[tag=verbose] run tellraw @s [{"text":" [ REQUIRE ] ","color":"pink"},{"text":" function require:load","clickEvent":{"action":"suggest_command","value":"/function require:load"},"color":"light_purple"}]
 
 #function load:load
+function fairy:load
+function music:death_song/load
