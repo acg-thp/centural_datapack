@@ -18,3 +18,4 @@ execute if data storage core:require {require:1b} if entity @p[tag=verbose] as @
 #function load:load
 function fairy:load
 function music:death_song/load
+function music:the_great_fairy_fountain/load
