@@ -1,1 +1,0 @@
-scoreboard objectives add fairy_movement minecraft.custom:minecraft.play_one_minute "Timer controlling Fairy Movement"
