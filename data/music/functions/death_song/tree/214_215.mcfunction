@@ -1,1 +1,1 @@
-execute as @s[scores={nbs_deathsong=17120..17240,nbs_deathsong_t=..213}] run function music:death_song/notes/214
+execute as @s[scores={nbs_deathsong=17200..17320,nbs_deathsong_t=..214}] run function music:death_song/notes/215
