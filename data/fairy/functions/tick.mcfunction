@@ -35,5 +35,7 @@ execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nb
 execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 run tp @s ~ ~ ~
 execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 run scoreboard players remove @s fairy_count 1
 execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 run experience add Bonesdog -1 points
+
+execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 run setblock ~ ~ ~ air
 execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 run tag @s remove fairy_coordinates_set
 #execute positioned 0 2 0 if entity @p[tag=!nbs_deathsong,tag=!fairy_coordinates_set,distance=..1] as @p[tag=!nbs_deathsong,tag=!fairy_coordinates_set,distance=..1] run setblock ~ ~-1 ~ air
