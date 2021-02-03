@@ -19,8 +19,8 @@ execute if entity @p[tag=fairy_add] as @e[tag=fairy_add] run scoreboard players 
 execute if entity @p[tag=fairy_add] as @e[tag=fairy_add] run tag @s remove fairy_add
 
 execute if entity @p[tag=nbs_deathsong,scores={fairy_count=1..},tag=!fairy_coordinates_set] as @a[tag=nbs_deathsong,scores={fairy_count=1..},tag=!fairy_coordinates_set] store result score @s fairy_death_x run data get entity @s Pos[0] 
-execute if entity @p[tag=nbs_deathsong,scores={fairy_count=1..},tag=!fairy_coordinates_set] as @a[tag=nbs_deathsong,scores={fairy_count=1..},tag=!fairy_coordinates_set] store result score @s fairy_death_x run data get entity @s Pos[1] 
-execute if entity @p[tag=nbs_deathsong,scores={fairy_count=1..},tag=!fairy_coordinates_set] as @a[tag=nbs_deathsong,scores={fairy_count=1..},tag=!fairy_coordinates_set] store result score @s fairy_death_x run data get entity @s Pos[2] 
+execute if entity @p[tag=nbs_deathsong,scores={fairy_count=1..},tag=!fairy_coordinates_set] as @a[tag=nbs_deathsong,scores={fairy_count=1..},tag=!fairy_coordinates_set] store result score @s fairy_death_y run data get entity @s Pos[1] 
+execute if entity @p[tag=nbs_deathsong,scores={fairy_count=1..},tag=!fairy_coordinates_set] as @a[tag=nbs_deathsong,scores={fairy_count=1..},tag=!fairy_coordinates_set] store result score @s fairy_death_z run data get entity @s Pos[2] 
 
 execute if entity @p[tag=nbs_deathsong,scores={fairy_count=1..},tag=!fairy_coordinates_set] as @a[tag=nbs_deathsong,scores={fairy_count=1..},tag=!fairy_coordinates_set] run tag @s add fairy_coordinates_set
 
@@ -28,9 +28,9 @@ execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nb
 execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 store result block ~ ~ ~ ExitPortal.X int 1 run scoreboard players get @s fairy_death_x 
 execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 store result block ~ ~ ~ ExitPortal.Y int 1 run scoreboard players get @s fairy_death_y 
 execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 store result block ~ ~ ~ ExitPortal.Z int 1 run scoreboard players get @s fairy_death_z 
-execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 run setblock ~ ~1 ~ stone
-execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 run setblock ~ ~3 ~ air
-execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 run tp @s ~ ~2 ~
+#execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 run setblock ~ ~1 ~ stone
+#execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 run setblock ~ ~3 ~ air
+execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 run tp @s ~ ~ ~
 execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 run scoreboard players remove @s fairy_count 1
 execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 run tag @s remove fairy_coordinates_set
-execute positioned 0 2 0 if entity @p[tag=!nbs_deathsong,tag=!fairy_coordinates_set,distance=..1] as @p[tag=!nbs_deathsong,tag=!fairy_coordinates_set,distance=..1] run setblock ~ ~-1 ~ air
+#execute positioned 0 2 0 if entity @p[tag=!nbs_deathsong,tag=!fairy_coordinates_set,distance=..1] as @p[tag=!nbs_deathsong,tag=!fairy_coordinates_set,distance=..1] run setblock ~ ~-1 ~ air
