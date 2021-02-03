@@ -21,4 +21,5 @@ function music:death_song/load
 function music:the_great_fairy_fountain/load
 
 function music:to_a_waterfow/load
+function music:song_of_healing/load
 #function centural:load
