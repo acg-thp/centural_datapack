@@ -18,4 +18,16 @@ execute if entity @p[tag=fairy_heal] as @a[tag=fairy_heal] run tag @s remove fai
 execute if entity @p[tag=fairy_add] as @e[tag=fairy_add] run scoreboard players add @s fairy_count 1
 execute if entity @p[tag=fairy_add] as @e[tag=fairy_add] run tag @s remove fairy_add
 
+execute if entity @p[tag=nbs_deathsong,scores={fairy_count=1..},tag=!fairy_coordinates_set] as @a[tag=nbs_deathsong,scores={fairy_count=1..},tag=!fairy_coordinates_set] store result score @s fairy_death_x run data get entity @s Pos[0] 
+execute if entity @p[tag=nbs_deathsong,scores={fairy_count=1..},tag=!fairy_coordinates_set] as @a[tag=nbs_deathsong,scores={fairy_count=1..},tag=!fairy_coordinates_set] store result score @s fairy_death_x run data get entity @s Pos[1] 
+execute if entity @p[tag=nbs_deathsong,scores={fairy_count=1..},tag=!fairy_coordinates_set] as @a[tag=nbs_deathsong,scores={fairy_count=1..},tag=!fairy_coordinates_set] store result score @s fairy_death_x run data get entity @s Pos[2] 
 
+execute if entity @p[tag=nbs_deathsong,scores={fairy_count=1..},tag=!fairy_coordinates_set] as @a[tag=nbs_deathsong,scores={fairy_count=1..},tag=!fairy_coordinates_set] run tag @s add fairy_coordinates_set
+
+execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] run setblock 0 0 0 minecraft:end_gateway replace
+execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 store result block ~ ~ ~ ExitPortal.x int 1 run scoreboard players get @s fairy_death_x 
+execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 store result block ~ ~ ~ ExitPortal.y int 1 run scoreboard players get @s fairy_death_y 
+execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 store result block ~ ~ ~ ExitPortal.z int 1 run scoreboard players get @s fairy_death_z 
+execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 run tp @s ~ ~ ~
+execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 run scoreboard players remove @s fairy_count 1
+execute if entity @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] as @p[tag=!nbs_deathsong,tag=fairy_coordinates_set] positioned 0 0 0 run tag @s remove fairy_coordindates_set
