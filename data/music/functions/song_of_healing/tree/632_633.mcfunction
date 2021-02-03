@@ -1,1 +1,1 @@
-execute as @s[scores={nbs_songofheal=50560..50680,nbs_songofheal_t=..631}] run function music_handler:song_of_healing/notes/632
+execute as @s[scores={nbs_songofheal=50560..50680,nbs_songofheal_t=..631}] run function music:song_of_healing/notes/632
