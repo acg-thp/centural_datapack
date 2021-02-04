@@ -64,7 +64,7 @@ execute if entity @p[tag=sitting,tag=idle,distance=..1,scores={seat_animation=57
 execute if entity @p[tag=sitting,tag=idle,distance=..1,scores={seat_animation=58}] run data modify entity @s Rotation set value [-82.0f,0.0f]
 execute if entity @p[tag=sitting,tag=idle,distance=..1,scores={seat_animation=59}] run data modify entity @s Rotation set value [-81.0f,0.0f]
 
-execute if entity @p[tag=sitting,tag=idle,distance=..1,scores={seat_animation=60}] run data modify entity @s Rotation set value [-70.0f,0.0f]
+execute if entity @p[tag=sitting,tag=idle,distance=..1,scores={seat_animation=60}] run data modify entity @s Rotation set value [-80.0f,0.0f]
 execute if entity @p[tag=sitting,tag=idle,distance=..1,scores={seat_animation=61}] run data modify entity @s Rotation set value [-79.0f,0.0f]
 execute if entity @p[tag=sitting,tag=idle,distance=..1,scores={seat_animation=62}] run data modify entity @s Rotation set value [-78.0f,0.0f]
 execute if entity @p[tag=sitting,tag=idle,distance=..1,scores={seat_animation=63}] run data modify entity @s Rotation set value [-77.0f,0.0f]
