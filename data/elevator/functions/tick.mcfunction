@@ -8,7 +8,7 @@ execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet
 
 execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z positioned ~ ~ ~ if entity @e[tag=elevator,dx=1,dy=1,dz=1,type=armor_stand] run effect give @e[tag=elevator,dx=1,dy=1,dz=1,type=armor_stand] minecraft:levitation 1 1
 
-execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z positioned ~ ~ ~ if entity @e[tag=elevator,dx=1,dy=1,dz=1,type=armor_stand] at @e[tag=elevator,dx=1,dy=1,dz=1,type=armor_stand] align x align y align z positioned ~.5 ~ ~.5 unless entity @s[distance=..1] run tp @s ~ ~ ~
+execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z positioned ~ ~ ~ if entity @e[tag=elevator,dx=1,dy=1,dz=1,type=armor_stand] at @e[tag=elevator,dx=1,dy=1,dz=1,type=armor_stand] align x align y align z positioned ~.5 ~ ~.5 unless entity @s[distance=..1] run tp @s ~ ~2 ~
 
 
 
