@@ -6,4 +6,4 @@ execute if entity @p[distance=..3,scores={seat_action=1..},tag=!sitting] as @p[d
 execute if entity @p[distance=..3,scores={seat_action=1..},tag=!sitting] as @p[distance=..3,scores={seat_action=1..},tag=!sitting] run tag @p[distance=..3,scores={seat_action=1..},tag=!sitting] add sitting
 
 
-execute if entity @s[tag=seat_west] run function city:seat/west/tick
+execute if entity @s[tag=west] run function city:seat/west/tick
