@@ -4,4 +4,16 @@ execute if entity @p[tag=sitting,distance=..1,scores={seat_animation=2}] run dat
 execute if entity @p[tag=sitting,distance=..1,scores={seat_animation=3}] run data modify entity @s Rotation set value [-93.0f,0.0f]
 execute if entity @p[tag=sitting,distance=..1,scores={seat_animation=4}] run data modify entity @s Rotation set value [-94.0f,0.0f]
 execute if entity @p[tag=sitting,distance=..1,scores={seat_animation=5}] run data modify entity @s Rotation set value [-95.0f,0.0f]
-execute if entity @p[tag=sitting,distance=..1,scores={seat_animation=6..}] run scoreboard players set @p[tag=sitting,distance=..1,scores={seat_animation=6..}] seat_animation 0
+execute if entity @p[tag=sitting,distance=..1,scores={seat_animation=6}] run data modify entity @s Rotation set value [-96.0f,0.0f]
+execute if entity @p[tag=sitting,distance=..1,scores={seat_animation=7}] run data modify entity @s Rotation set value [-97.0f,0.0f]
+execute if entity @p[tag=sitting,distance=..1,scores={seat_animation=8}] run data modify entity @s Rotation set value [-98.0f,0.0f]
+execute if entity @p[tag=sitting,distance=..1,scores={seat_animation=9}] run data modify entity @s Rotation set value [-99.0f,0.0f]
+execute if entity @p[tag=sitting,distance=..1,scores={seat_animation=10}] run data modify entity @s Rotation set value [-100.0f,0.0f]
+execute if entity @p[tag=sitting,distance=..1,scores={seat_animation=11}] run data modify entity @s Rotation set value [-101.0f,0.0f]
+execute if entity @p[tag=sitting,distance=..1,scores={seat_animation=12}] run data modify entity @s Rotation set value [-102.0f,0.0f]
+execute if entity @p[tag=sitting,distance=..1,scores={seat_animation=13}] run data modify entity @s Rotation set value [-103.0f,0.0f]
+execute if entity @p[tag=sitting,distance=..1,scores={seat_animation=14}] run data modify entity @s Rotation set value [-104.0f,0.0f]
+execute if entity @p[tag=sitting,distance=..1,scores={seat_animation=15}] run data modify entity @s Rotation set value [-105.0f,0.0f]
+execute if entity @p[tag=sitting,distance=..1,scores={seat_animation=16}] run data modify entity @s Rotation set value [-106.0f,0.0f]
+execute if entity @p[tag=sitting,distance=..1,scores={seat_animation=17}] run data modify entity @s Rotation set value [-107.0f,0.0f]
+execute if entity @p[tag=sitting,distance=..1,scores={seat_animation=18..}] run scoreboard players set @p[tag=sitting,distance=..1,scores={seat_animation=6..}] seat_animation 0
