@@ -7,4 +7,6 @@ function music:to_a_waterfow/tick
 function music:song_of_healing/tick
 
 function city:tick
+
+function elevator:tick
 #function centural:tick
