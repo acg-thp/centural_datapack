@@ -5,7 +5,7 @@ data remove storage require:load status
 
 #Status Loading
 execute if entity @p[tag=verbose] as @a[tag=verbose] run tellraw @s [{"text":" [ MODIFY ] ","color":"gold"},{"text":"data modify storage require:load status set value loading","clickEvent":{"action":"suggest_command","value":"/data modify storage core:load status set value loading"},"color":"light_purple"}]
-data modify storage  require:load status set value loading
+data modify storage require:load status set value loading
 
 
 #
