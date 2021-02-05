@@ -4,6 +4,7 @@ execute if entity @e[tag=elevator,type=armor_stand] at @e[tag=elevator,type=armo
 
 #execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s align x align y align z unless entity @e[tag=elevator_slab,dx=1,dy=1,dz=1] run effect clear @s minecraft:levitation
 
+execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s at @e[tag=elevator_slab] align x align y align z unless entity @s[tag=elevator_up,dx=1,dy=1,dz=1] unless entity @e[tag=elevator_slab,distance=..1] run effect give @s minecraft:slow_falling 1 1
 execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s at @e[tag=elevator_slab] align x align y align z unless entity @s[tag=elevator_up,dx=1,dy=1,dz=1] unless entity @e[tag=elevator_slab,distance=..1] run effect clear @s minecraft:levitation
 execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s align x align y align z unless entity @e[tag=elevator_slab,dx=1,dy=1,dz=1] run tag @s remove elevator_up
 #execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s align x align y align z unless entity @e[tag=elevator_slab,dx=1,dy=1,dz=1] run effect clear @s minecraft:levitation
