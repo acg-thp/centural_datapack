@@ -19,7 +19,7 @@ execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s align x align
 
 #execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z if entity @e[tag=elevator_slab,dx=1,dy=1,dz=1,type=shulker] run effect give @e[tag=elevator,distance=..6,type=armor_stand] minecraft:levitation 1 1 true
 
-execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z if entity @e[tag=elevator_slab,dx=1,dy=1,dz=1,type=shulker] run data modify entity @e[limit=1,tag=elevator_slab,dx=1,dy=1,dz=1,type=shulker] Motion[1] set from entity @s Motion[1]
+execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z if entity @e[tag=elevator_slab,dx=1,dy=1,dz=1,type=shulker] as @e[tag=elevator_slab,dx=1,dy=1,dz=1,type=shulker] run data modify entity @s Motion[1] set from entity @p[tag=elevator_up] Motion[1]
 
 
 #execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z positioned ~ ~ ~ run particle minecraft:heart ~ ~ ~ 0 0 0 1 1 force @a[distance=..16]
@@ -28,7 +28,7 @@ execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet
 
 execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z positioned ~ ~ ~ if entity @e[tag=elevator_slab,dx=1,dy=1,dz=1,type=shulker] run effect give @s minecraft:levitation 1 1 true
 
-execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z positioned ~ ~ ~ if entity @e[tag=elevator_slab,dx=1,dy=1,dz=1,type=shulker] run effect give @e[tag=elevator,limit=1,distance=..6,type=armor_stand] minecraft:levitation 1 1 false
+#execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z positioned ~ ~ ~ if entity @e[tag=elevator_slab,dx=1,dy=1,dz=1,type=shulker] run effect give @e[tag=elevator,limit=1,distance=..6,type=armor_stand] minecraft:levitation 1 1 false
 
 
 #execute if entity @e[tag=elevator,type=armor_stand] at @e[tag=elevator,type=armor_stand] at @e[tag=elevator_slab,distance=..1,limit=1] align x align y align z positioned ~.5 ~1 ~.5 unless entity @p[distance=..1,tag=elevator_up] as @a[dy=1,dx=1,dz=1,tag=elevator_up] run tag @s remove elevator_up 
