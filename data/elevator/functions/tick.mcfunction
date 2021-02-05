@@ -35,7 +35,7 @@ execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet
 
 #This version seems more stable
 execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z positioned ~ ~ ~ if entity @e[tag=elevator_slab,dx=1,dy=1,dz=1,type=shulker] run effect give @e[tag=elevator,distance=..6,type=armor_stand] minecraft:levitation 1 1 false
-execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z positioned ~ ~ ~ if entity @e[tag=elevator_slab,dx=1,dy=1,dz=1,type=shulker] run effect give @e[tag=elevator,distance=..6,type=armor_stand] minecraft:slow_falling 60 1 false
+execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z positioned ~ ~ ~ if entity @e[tag=elevator_slab,dx=1,dy=1,dz=1,type=shulker] run effect give @e[tag=elevator,distance=..6,type=armor_stand] minecraft:slow_falling 60 2 false
 #execute if entity @e[tag=elevator_slab] as @e[tag=elevator_slab] at @s align x align y align z positioned ~ ~-1 ~ if entity @p[dx=1,dy=1,dz=1] as @p[dx=1,dy=1,dz=1] run tp @s ~ ~2 ~
 
 
