@@ -1,6 +1,6 @@
 execute if entity @e[tag=elevator,type=armor_stand] at @e[tag=elevator,type=armor_stand] at @e[tag=elevator_slab,distance=..1,limit=1] align x align y align z run particle minecraft:heart ~ ~ ~ 0 0 0 1 1 force @a[distance=..16]
 
-execute if entity @e[tag=elevator,type=armor_stand] at @e[tag=elevator,type=armor_stand] at @e[tag=elevator_slab,distance=..1,limit=1] align x align y align z positioned ~ ~2 ~ if entity @p[dx=1,dy=1,dz=1,tag=!elevator_up] as @a[dx=1,dy=1,dz=1,tag=!elevator_up] run tag @s add elevator_up 
+execute if entity @e[tag=elevator,type=armor_stand] at @e[tag=elevator,type=armor_stand] at @e[tag=elevator_slab,distance=..1,limit=1] align x align y align z positioned ~ ~1.5 ~ if entity @p[dx=1,dy=1,dz=1,tag=!elevator_up] as @a[dx=1,dy=1,dz=1,tag=!elevator_up] run tag @s add elevator_up 
 
 execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s align x align y align z unless entity @e[tag=elevator_slab,dx=1,dy=1,dz=1] run effect clear @s minecraft:levitation
 execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s align x align y align z unless entity @e[tag=elevator_slab,dx=1,dy=1,dz=1] run tag @s remove elevator_up
