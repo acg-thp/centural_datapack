@@ -1,6 +1,6 @@
-#execute if entity @e[tag=elevator,type=armor_stand] at @e[tag=elevator,type=armor_stand] at @e[tag=elevator_slab,distance=..1,limit=1] align x align y align z run particle minecraft:heart ~ ~ ~ 0 0 0 1 1 force @a[distance=..16]
+execute if entity @e[tag=elevator,type=armor_stand] at @e[tag=elevator,type=armor_stand] at @e[tag=elevator_slab,distance=..1,limit=1] align x align y align z run particle minecraft:heart ~ ~ ~ 0 0 0 1 1 force @a[distance=..16]
 
-execute if entity @e[tag=elevator,type=armor_stand] at @e[tag=elevator,type=armor_stand] at @e[tag=elevator_slab,distance=..1,limit=1] align x align y align z positioned ~ ~ ~ if entity @p[dx=1,dy=1,dz=1,tag=!elevator_up] as @a[dx=1,dy=1,dz=1,tag=!elevator_up] run tag @s add elevator_up 
+execute if entity @e[tag=elevator,type=armor_stand] at @e[tag=elevator,type=armor_stand] at @e[tag=elevator_slab,distance=..1,limit=1] align x align y align z positioned ~ ~1 ~ if entity @p[dx=1,dy=1,dz=1,tag=!elevator_up] as @a[dx=1,dy=1,dz=1,tag=!elevator_up] run tag @s add elevator_up 
 
 #execute if entity @e[tag=elevator,type=armor_stand] at @e[tag=elevator,type=armor_stand] at @e[tag=elevator_slab,distance=..1,limit=1] align x align y align z positioned ~.5 ~ ~.5 if entity @p[distance=.75..1,tag=elevator_up] as @a[distance=0.75..1,tag=elevator_up] run tp @s ~ ~ ~
 
