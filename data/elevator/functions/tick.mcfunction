@@ -1,4 +1,4 @@
-execute if entity @e[tag=elevator,type=armor_stand] at @e[tag=elevator,type=armor_stand] at @e[tag=elevator_slab,distance=..1,limit=1] align x align y align z run particle minecraft:heart ~ ~ ~ 0 0 0 1 1 force @a[distance=..16]
+#execute if entity @e[tag=elevator,type=armor_stand] at @e[tag=elevator,type=armor_stand] at @e[tag=elevator_slab,distance=..1,limit=1] align x align y align z run particle minecraft:heart ~ ~ ~ 0 0 0 1 1 force @a[distance=..16]
 
 execute if entity @e[tag=elevator,type=armor_stand] at @e[tag=elevator,type=armor_stand] at @e[tag=elevator_slab,distance=..1,limit=1] align x align y align z if entity @p[dx=1,dy=1.25,dz=1,tag=!elevator_up] as @a[dx=1,dy=1,dz=1,tag=!elevator_up] run tag @s add elevator_up 
 
@@ -17,13 +17,13 @@ execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s align x align
 
 #execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z positioned ~ ~-1 ~ if entity @e[tag=elevator_slab,dx=1,dy=1,dz=1,type=falling_block] run particle minecraft:heart ~ ~ ~ 0 0 0 1 1 force @a[distance=..16]
 
-execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z if entity @e[tag=elevator_slab,dx=1,dy=1,dz=1,type=shulker] run effect give @e[tag=elevator,distance=..6,type=armor_stand] minecraft:levitation 1 1 false
+execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z if entity @e[tag=elevator_slab,dx=1,dy=1,dz=1,type=shulker] run effect give @e[tag=elevator,distance=..6,type=armor_stand] minecraft:levitation 1 1 true
 
-execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z positioned ~ ~ ~ run particle minecraft:heart ~ ~ ~ 0 0 0 1 1 force @a[distance=..16]
+#execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z positioned ~ ~ ~ run particle minecraft:heart ~ ~ ~ 0 0 0 1 1 force @a[distance=..16]
 
 #execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z positioned ~ ~-1 ~ if entity @e[tag=elevator_slab,dx=1,dy=1,dz=1,type=falling_block] run particle minecraft:heart ~ ~ ~ 0 0 0 1 1 force @a[distance=..16]
 
-execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z positioned ~ ~ ~ if entity @e[tag=elevator_slab,dx=1,dy=1,dz=1,type=shulker] run effect give @s minecraft:levitation 1 1 false
+execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z positioned ~ ~ ~ if entity @e[tag=elevator_slab,dx=1,dy=1,dz=1,type=shulker] run effect give @s minecraft:levitation 1 1 true
 
 execute if entity @p[tag=elevator_up] as @a[tag=elevator_up] at @s anchored feet align x align y align z positioned ~ ~ ~ if entity @e[tag=elevator_slab,dx=1,dy=1,dz=1,type=shulker] run effect give @e[tag=elevator,limit=1,distance=..6,type=armor_stand] minecraft:levitation 1 1 false
 
