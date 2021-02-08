@@ -1,0 +1,127 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "dz:motorbike",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": { "animate": [ "run_command" ]   },
+      "animations": { "run_command": "controller.animation.bike"  }
+
+
+    },
+    "component_groups": {
+
+    },
+
+    "components": {
+
+
+   
+
+
+      "minecraft:type_family": {
+        "family": [ "rocket" ]
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:loot": {
+        "table": ""
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesWater": true
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:scale": {
+        "value": 1.1
+      },
+      "minecraft:movement": {
+        "value": 0.5
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.5
+      },
+      "minecraft:fire_immune": {
+      },
+
+      "minecraft:navigation.walk": {
+        "is_amphibious": false,
+        "avoid_water": true
+      },
+
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:horse.jump_strength": {
+        "value": {
+          "range_min": 1.6,
+          "range_max": 2
+        }
+      },
+      "minecraft:rideable": {
+        "seat_count": 7,
+        "controlling_seat": 0,                              
+        "family_types": [
+          "player"
+        ],
+        "interact_text": "Jump on the bike!",
+        "pull_in_entities": true,
+        "seats": [
+          {
+            "position": [0, 0.8, -0.7],
+         "min_rider_count": 0,
+         "max_rider_count": 1
+          }
+        ]
+      },
+      "minecraft:behavior.player_ride_tamed": {
+      },
+      "minecraft:input_ground_controlled": {
+      },
+      "minecraft:can_power_jump": {
+      },
+      "minecraft:balloonable": {
+      },
+      "minecraft:collision_box": {
+        "width": 2,
+        "height": 1
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "fall",
+          "deals_damage": false
+        }
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "string",
+            "heal_amount": 1
+          }
+        ]
+      },                             
+      "minecraft:is_tamed": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:physics": {
+      }
+    },
+
+    "events": {
+     
+    }
+  }
+}

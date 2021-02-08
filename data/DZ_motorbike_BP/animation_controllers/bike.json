@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.bike": {
+      "states": {
+				"default": { "transitions": [ 
+					
+								{ "ride":  "query.has_rider && query.is_moving"  }
+					
+					
+					]},
+		
+		
+				 "ride": {
+					  "transitions": [{ "default": "(1.0)" }],
+				 	   "on_entry": [ 	"/function bikesound" ]
+							}
+						  
+				
+			
+			  }
+    }
+  }
+}
+
