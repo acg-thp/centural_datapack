@@ -1,0 +1,6 @@
+name: datapack_migration
+dependencies:
+  objd: ^0.3.5
+
+environment:
+  sdk: '>=2.10.0 <3.0.0'
