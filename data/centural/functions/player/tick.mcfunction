@@ -1,2 +1,0 @@
-execute if entity @p[nbt={recipeBook:{recipes:[]}},tag=!joined_once] as @a[nbt={recipeBook:{recipes:[]}},tag=!joined_once] run tellraw @s [{"selector":"@s"}," has joined the server for the first time!"]
-execute if entity @p[nbt={recipeBook:{recipes:[]}},tag=!joined_once] as @a[nbt={recipeBook:{recipes:[]}},tag=!joined_once] run tag @s add joined_once

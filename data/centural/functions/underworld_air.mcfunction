@@ -1,2 +1,0 @@
-execute at @e[tag=underworld_air] run fill ~ ~-1 ~ ~ ~-1 ~ air replace magma_block
-execute if entity @e[tag=underworld_air] as @e[tag=underworld_air] at @s positioned ~ -765 ~ unless entity @s[dy=512] run tp @s ~ -764 ~
