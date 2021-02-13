@@ -123,7 +123,8 @@ class project_main extends Widget {
         "elevator": {
           "files": {"load": {}, "tick": {}}
         },
-        "music": {"full": {}}
+        //"music": {"full": {}},
+        "city": {"full": {}}
       }
     });
   }
