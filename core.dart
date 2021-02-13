@@ -5,62 +5,88 @@ import 'dart:io' as dart show File;
 
 main(List<String> args) {
   return createProject(
-      Project(name: "centural", target: "./", generate: core()), args);
+      Project(name: "centural", target: "./", generate: project_main()), args);
 }
 
-Pack import_project(arguments) {
-  if (arguments["name"] != null) {
-    final String load = waitFor(
-        dart.File('./data/${arguments["name"]}/functions/load.mcfunction')
-            .readAsString());
-    final String tick = waitFor(
-        dart.File('./data/${arguments["name"]}/functions/tick.mcfunction')
-            .readAsString());
-
-    if (arguments["files"] != null) {
-      List<File> pack_list = [];
-      for (var file_name in arguments["files"]) {
-        print(file_name);
-        String script_as_string = waitFor(dart.File(
-                './data/${arguments["name"]}/functions/${file_name}.mcfunction')
-            .readAsString());
-        pack_list.add(File('${file_name}',
-            child: For.of([CommandList.str(script_as_string)])));
-      }
-      print(arguments["name"]);
-      return Pack(name: arguments["name"], files: pack_list);
-    } else {
-      return Pack(
-          name: arguments["name"],
-          load: File('load', child: For.of([CommandList.str(load)])),
-          main: File('tick', child: For.of([CommandList.str(tick)])));
-    }
-  } else if (arguments["paths"] != null) {
-    return Pack(
-        name: "core",
-        load: File('load', child: For.of([CommandList.str("")])),
-        main: File('tick', child: For.of([CommandList.str("")])));
-  } else {
-    return Pack(
-        name: "error",
-        main: File('tick', child: For.of([CommandList.str("/say error")])));
-  }
+Pack core(String core_name, String core_load_name, String core_tick_name) {
+  return Pack(
+      name: core_name,
+      load: core_load(core_load_name),
+      main: core_tick(core_tick_name));
 }
 
-class core extends Widget {
+File core_load(String core_name) {
+  return File('load',
+      child: CommandList.str(waitFor(
+          dart.File('./data/core/functions/load.mcfunction').readAsString())));
+}
+
+File core_tick(String core_name) {
+  return File('tick',
+      child: CommandList.str(waitFor(
+          dart.File('./data/core/functions/tick.mcfunction').readAsString())));
+}
+
+bool project_map_validator(Map project_map) {
+  return project_map.containsKey("core");
+}
+
+bool project_map_has_plugins(Map project_map) {
+  return project_map.containsKey("plugins");
+}
+
+File load_file(String project_name, String file_name) {
+  return File(file_name,
+      child: CommandList.str(waitFor(
+          dart.File('./data/${project_name}/functions/${file_name}.mcfunction')
+              .readAsString())));
+}
+
+List<File> load_files(String project_name, Map files_map) {
+  List<File> file_list = [];
+  files_map.forEach((function_file, function_details) {
+    file_list.add(load_file(project_name, function_file));
+  });
+  return file_list;
+}
+
+For load_plugins(Map plugin_map) {
+  List<Pack> pack_list = [];
+
+  plugin_map.forEach((plugin_name, plugin_details) {
+    pack_list.add(Pack(
+        name: plugin_name,
+        files: load_files(plugin_name, plugin_details["files"])));
+  });
+
+  return For.of(pack_list);
+}
+
+For generate_project_from_map(Map project_map) {
+  return project_map_validator(project_map)
+      ? For.of([
+          core(project_map["core"], "load", "tick"),
+          load_plugins(project_map["plugins"])
+        ])
+      : throw ("project_validator failed");
+}
+
+class project_main extends Widget {
   @override
   Widget generate(Context context) {
-    return For.of([
-      import_project({"name": "core"}),
-      import_project({
-        "name": "fairy",
-        "files": ["load", "tick"]
-      }),
-      import_project({
-        "name": "elevator",
-        "files": ["load", "tick"]
-      }),
-      import_project({"name": "music", "tick": false, "load": false})
-    ]);
+    return generate_project_from_map({
+      "core": "core",
+      "plugins": {
+        "fairy": {
+          "files": {"load": {}, "tick": {}}
+        },
+        "elevator": {
+          "files": {"load": {}, "tick": {}}
+        },
+        "home": {
+          "files": {"load/load": {}}
+        }
+      }
+    });
   }
 }
