@@ -1,4 +1,6 @@
-function core:tick_handler/tick
+#Mark as active unless storage has information alread.
+execute unless data storage core:tick * run data modify storage core:tick tick set value 1b
+
 function fairy:tick
 function music:death_song/tick
 function music:the_great_fairy_fountain/tick

@@ -1,2 +1,0 @@
-function core_handler:core_backup_handler
-stop

@@ -79,7 +79,7 @@ Pack full_load(String plugin_name, Map plugin_details) {
       } else if (file_stat.type.toString() == "file") {
         files_map.addAll({
           "${file.path.substring(file.path.indexOf("/functions/") + 11, file.path.length).replaceAll("\\", "/").replaceAll(".mcfunction", "")}":
-              {}
+              {} //TODO this is ugly and doesnt follow standard of rest of project
         });
       }
     }
@@ -117,6 +117,7 @@ class project_main extends Widget {
     return generate_project_from_map({
       "core": "core",
       "plugins": {
+        "core": {"full": {}},
         "fairy": {
           "files": {"load": {}, "tick": {}}
         },
